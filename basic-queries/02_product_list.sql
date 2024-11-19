@@ -118,3 +118,11 @@ SELECT Concat(LastName, ' ' , FirstName) as FullName
 FROM northwind.employees;
 
 #----------------------------------
+
+# --------------------------------------------------------------------------- #
+# 12) list all Northwind employees with "manager" in title                    #
+# --------------------------------------------------------------------------- #
+
+SELECT * 
+FROM northwind.employees
+WHERE Title LIKE '%Manager%';
