@@ -120,9 +120,49 @@ FROM northwind.employees;
 #----------------------------------
 
 # --------------------------------------------------------------------------- #
-# 12) list all Northwind employees with "manager" in title                    #
+# 12) Query to list all Northwind employees with "manager" in title           #
 # --------------------------------------------------------------------------- #
 
 SELECT * 
 FROM northwind.employees
 WHERE Title LIKE '%Manager%';
+
+#----------------------------------
+
+# --------------------------------------------------------------------------- #
+# 13) Query to list all Northwind employees with distinct job title          #
+# --------------------------------------------------------------------------- #
+
+SELECT distinct Title 
+FROM northwind.employees;
+
+#----------------------------------
+
+# --------------------------------------------------------------------------- #
+# 14) Query to list employees that have salary between $2000 - $2500          #
+# --------------------------------------------------------------------------- #
+
+SELECT EmployeeID, LastName, firstName, Title, Salary
+FROM northwind.employees
+WHERE Salary BETWEEN 2000 AND 2500;
+
+#----------------------------------
+
+# ------------------------------------------------------------ #
+# 15) Query to list all info of Northwind's suppliers          #
+# ------------------------------------------------------------ #
+
+SELECT *
+FROM northwind.suppliers; 
+
+#----------------------------------
+
+# ------------------------------------------------------------ #
+# 16) Query to list all items that "Tokyo Traders" supplies    #
+# ------------------------------------------------------------ #
+
+SELECT ProductID, ProductName
+FROM northwind.products
+WHERE SupplierID = 4;
+
+#----------------------------------
