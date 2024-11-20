@@ -153,7 +153,7 @@ WHERE Salary BETWEEN 2000 AND 2500;
 # ------------------------------------------------------------ #
 
 SELECT *
-FROM northwind.suppliers; 
+FROM northwind.suppliers;
 
 #----------------------------------
 
